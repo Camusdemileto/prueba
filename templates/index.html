@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{ data.titulo }}{%endblock%}
+
+{% block body %}
+<h1>{{ data.bienvenida }}</h1>
+<ul>
+    {% for h in data.lista %}
+        <li>{{ h }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
